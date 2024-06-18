@@ -10,7 +10,7 @@ router.get('/register', async (req, res) => {
 router.post('/register', async (req, res) => {
     const { username, email, password } = req.body;
 
-    console.log(req.body);
+    // console.log(req.body);
 
     if (!username || !email || !password) {
         res.status(400).json({ message: 'Please provide a username, email, and password' });
